@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="questions">
+            <form action="">
+                <label for="question">Type your question here</label><br>
+                <input type="text" id="question" name="question">
+            </form>
+        </div>
+        <div id="answers">
+            <form action="">
+                <label for="1">Option 1</label>
+                <input type="text" id="1" name="1"><br>
+
+                <label for="2">Option 2</label>
+                <input type="text" id="2" name="2"><br>
+
+                <label for="3">Option 3</label>
+                <input type="text" id="3" name="3"><br>
+                
+                <label for="4">Option 4</label>
+                <input type="text" id="4" name="4"><br>
+            </form>
+        </div>
+
+        <div id="btn-div">
+            <button onclick="debug()">
+                <p>Debug</p>
+            </button>
+            <button onclick="createPoll()">
+                <p>Create poll</p>
+            </button>
+        </div>
+    </div>
+
+    <div id="polls">
+        <div id="poll-1">
+            <ul>
+                <div class="flex">
+                    <li id="p1:0"></li>
+                </div>
+
+                <div class="flex">
+                    <li id="p1:1"></li>
+                    <p id="p1r:1">0</p>
+                    <button onclick="vote(1)">
+                        <h4>Vote</h4>
+                    </button>
+                </div>
+
+                <div class="flex">
+                    <li id="p1:2"></li>
+                    <p id="p1r:2">0</p>
+                    <button onclick="vote(2)">
+                        <h4>Vote</h4>
+                    </button>
+                </div>
+
+                <div class="flex">
+                    <li id="p1:3"></li>
+                    <p id="p1r:3">0</p>
+                    <button onclick="vote(3)">
+                        <h4>Vote</h4>
+                    </button>
+                </div>
+
+                <div class="flex">
+                    <li id="p1:4"></li>
+                    <p id="p1r:4">0</p>
+                    <button onclick="vote(4)">
+                        <h4>Vote</h4>
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
