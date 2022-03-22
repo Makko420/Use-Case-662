@@ -35,9 +35,9 @@ h4 {
 
 label, input, li, p{
     color: rgb(255, 255, 230);
-    padding: 3px;
+    padding: 5px;
     list-style: none;
-    margin: 2px;
+    margin: 0px;
 }
 
 h4 {
@@ -47,12 +47,14 @@ h4 {
 
 .flex {
     display:flex;
+    justify-content: space-between;
     margin: 5px;
     border: rgb(43, 42, 48) 3px solid;
     width: 200px;
 }
 
 #btn-div button {
+    margin-left: 5;
     border-top: rgb(43, 42, 48) 3px solid;
 }
 
@@ -60,7 +62,6 @@ button {
     background-color: rgb(73, 71, 84);
     border: none;
     border-left: rgb(43, 42, 48) 3px solid;
-    margin-left: 5;
     padding: 0;
     color: rgb(255, 255, 230);
     font-size: 16px;
@@ -68,4 +69,12 @@ button {
 
 button:hover > p{
     background-color:rgb(106, 104, 121);
+}
+
+.btn-vote {
+    right: 100%;
+}
+
+.flex-2 {
+    display: flex;
 }
